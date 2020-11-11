@@ -1,0 +1,792 @@
+/* dark green : #556b2f */
+/* light green : #6b8e23
+yellow:#808000 */
+/*==================top donation table starts========================  */
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background: #FFEBCD;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #FFEBCD;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #4C3E24;
+  outline: 1px solid slategrey;
+}
+.hoverTable{
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.0);
+    text-align: center;
+}
+
+.hoverTable td{
+  padding-top: 25px
+}
+
+.hoverTable tr:hover {
+          background-color: rgba(20,54,1,0.6);
+          color: #fff;
+}
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+.subbut {
+  display: inline-block;
+  border-radius: 30px;
+  border: none;
+  background-color: #C6D113;
+  color: #131313;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 50%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: auto;
+}
+
+.subbut span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.subbut span:after {
+  content: '\1F446';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+
+.subbut:hover{
+  background-color: #C6D113;
+  color: #fff;
+}
+.subbut:hover span {
+  padding-right: 25px;
+}
+
+.subbut:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.tablerow{
+  height: 70px;
+  text-align: center;
+}
+
+.s1{
+  text-align: center; 
+            padding: 10px;
+}
+
+/*End of Button*/
+.counter{
+  font-size: 500%;
+  background: -webkit-linear-gradient(#fff, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #FFEBCD;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bars {
+  height: 8px;
+  background: #4C3E24;
+  width: 0%;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-bg{
+  background: rgba(20,54,1,0.6);
+}
+
+.navbar-nav .nav-link{
+  color: #fff!important  ;
+}
+.navbar-toggler{
+  outline: none!important;
+}
+
+/*===================== hero new======================= */
+
+.hero-cont  {
+  /* height: 500px;
+  position: relative;
+  overflow: hidden;
+   */
+   
+  }
+  .hero-container{
+padding-top:12%;
+    padding-bottom:50%;
+  text-align: center;
+  justify-content: center;
+
+  }
+  
+  .hero-img {
+  position: relative;
+  overflow: hidden;
+  background-image: url(./finalhero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+    height:700px;
+  }
+
+
+/*================= hero new ends================ */
+
+/*======ABOUT US======*/
+
+.tabs .nav-pills .nav-item{
+  margin-bottom: 10px;
+}
+
+.tabs .nav-pills .nav-item .nav-link{
+  background: #fff;
+  border-radius: 4px;
+  color: #000;
+  font-weight: bold;
+  border: 1px solid rgba(20, 54, 1, 0.6);
+  font-size: 20px;
+  line-height: 30px;
+}
+.tabs .nav-pills .nav-item .nav-link span{
+  color: #053001;
+  font-size: 30px;
+  
+}
+.tabs .nav-pills .nav-item .nav-link.active{
+  color: #fff;
+  background: #556b2f;
+  border: 1px solid #9ef596;
+}
+.tabs .nav-pills .nav-item .nav-link.active span{
+  color: #fff;
+}
+.tabs .tab-content{
+  background: #fff;
+  padding: 0;
+}
+.tabs .tab-content .img{/*image-size for this section is 1000x667*/
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.tabs .tab-content h3{
+  font-weight: bold;
+}
+.tabs .tab-content h3 a{
+  color: #000;
+}
+
+/*======END OF ABOUT US======*/
+
+
+
+/*======STORIES======*/
+.story-box{
+  padding: 15px;
+  background: #c6f8bc;
+  margin-bottom: 30px;
+  position: relative;
+}
+.story-icon{
+  width: 90px;
+  height:90px;
+  text-align: center;
+  line-height: 90px;
+}
+.story-icon i{
+  font-size: 50px;
+  
+  color: #fff;
+  
+  mix-blend-mode: difference;
+  
+  
+  
+}
+.story-box h2{
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+.story-box p{
+  font-size: 16px;
+  font-weight: light;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+.overlay{
+  margin: 20px auto;
+  border: none;
+  padding: 10px 44px;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+}
+.overlay:before{
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: #053001;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px 0px 0px 10px;
+}
+.overlay:hover:before{
+  background: #053001;
+  width: 100%;
+  border-radius: 10px;
+}
+/*======END OF STORIES======*/
+
+
+
+
+/*=================OUR PROJECTS SECTION================*/
+
+.project-container{
+  /* background: #136d01; */
+  position: relative;
+  overflow: hidden;
+}
+.outline{
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px)translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.outline:before{
+  content: '';
+  position: absolute;
+  /* border: #7ff767 solid 4px; */
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  opacity: 0;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+}
+.outline:hover:before,
+.outline:focus:before,
+.outline:active:before{
+  opacity: 1;
+}
+.grow{
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  /* box-shadow: 0 0 10px #7ff767; */
+  transition-duration: 0.3s;
+  /* transition-property: box-shadow, transform; */
+}
+.grow:hover,
+.grow:focus,
+.grow:active{
+  /* box-shadow: 0 10px 10px 5px #7ff767; */
+  transform: scale(1.1);
+}
+
+/* /======END OF OUR PROJECTS SECTION======/ */
+ /*===============Project Section1=============== */
+
+  #project .project-item {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #project .project-item .project-link {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+  #project .project-item .project-link .project-hover {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(254, 209, 54, 0.9);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+  }
+  #project .project-item .project-link .project-hover 
+  .project-hover-content {
+    font-size: 1.25rem;
+    color: white;
+  }
+  #project .project-item .project-link:hover .project-hover {
+    opacity: 1;
+  }
+  #project .project-item .project-caption {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #fff;
+  }
+  #project .project-item .project-caption .project-caption-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  #project .project-item .project-caption .project-caption-subheading {
+    font-style: italic;
+   }
+  
+  .project-modal .modal-dialog {
+    margin: 1rem;
+    max-width: 100vw;
+  }
+  .project-modal .modal-content {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+  }
+  .project-modal .modal-content h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .project-modal .modal-content p.item-intro {
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+  .project-modal .modal-content p {
+    margin-bottom: 2rem;
+  }
+  .project-modal .modal-content ul.list-inline {
+    margin-bottom: 2rem;
+  }
+  .project-modal .modal-content img {
+    margin-bottom: 2rem;
+  }
+  .project-modal .close-modal {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .project-modal .close-modal:hover {
+    opacity: 0.3;
+  }
+
+/* /=================End of Project1======================/ */
+/*==========donation section starts==============*/
+
+.donateee{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  background:#ECEFF2; 
+  height: 70%;
+
+}
+.donbut{  
+    text-align: center; 
+    border-radius: 30px;
+    border: none;
+    color: #131313;
+  font-size: 20px;
+    padding-bottom: 1%;
+  padding-top:1%;
+    width: 40%;
+  transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin: 5% auto;
+  height:50px;
+}
+.donbut:hover{
+  background-color: #C6D113;
+}
+.donbut:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.otheram{
+  margin: auto;
+  width:54%;
+  text-align:center;
+  position: relative;
+}
+.donate-now {
+
+  list-style-type: none;
+  margin: 25px 0 0 0;
+  padding: 0;
+}
+
+.donate-now th {
+  float: left;
+  margin: 0 5px 0 0;
+  width: 150px;
+  height: 50px;
+  position: relative;
+  text-align: center;
+}
+
+
+.donate-now label,
+.donate-now input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.donate-now input[type="radio"] {
+  opacity: 0.01;
+  z-index: 100;
+}
+
+.donate-now input[type="radio"]:checked+label,
+.Checked+label {
+  background: yellow;
+}
+
+.donate-now label {
+  padding: 5px;
+  border: 1px solid #CCC;
+  cursor: pointer;
+  z-index: 90;
+  border-radius: 10%;
+  
+}
+
+#donatetable{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.donate-now label:hover {
+  background: #DDD;
+}
+label { 
+            float: left; 
+        } 
+          
+        span { 
+            display: block; 
+            overflow: hidden; 
+            padding: 0px 4px 0px 6px; 
+        } 
+          
+        input { 
+            width: 70%; 
+        } 
+        .rowab{
+  padding-left: 30%;
+  width: 65%;
+}
+hr{
+  color: black
+}
+h1{
+  font-weight: 500;
+  size: 10em;
+}
+
+/*==========donation ends==============*/
+/*==================== Contact Card Starts==================== */
+.box
+{
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.box .content
+{
+  
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 55%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  
+}
+.box .content h2
+{
+  margin: 0;
+  padding: 0;
+}
+.box .content a
+{
+  text-decoration: none;
+  background: #556b2f;
+  color: #fff;
+  padding: 5px;
+  display: inline-block;
+}
+.box .content h2,
+.box .content p,
+.box .content a
+{
+  opacity: 0;
+  transition: 0.7s;
+  transform: translateY(20px);
+}
+
+.box:hover{
+  border:7px solid #053001;
+  transition: 0.3s;
+}
+.box:hover .content h2
+{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s
+}
+ .box:hover .content p
+{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s
+}
+ .box:hover .content a
+{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s
+}
+
+/* ===============end of first part================ */
+/* ==============second part===================== */
+
+.ribbon{
+    width: 100px;
+    height: 100px;
+    margin: -10px auto;
+    background: #cdcd00; 
+    position: absolute;
+    top: 0;
+    right:0;
+}
+.ribbon:before{
+    content:"";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    border-left: 75px solid #cdcd00;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+.ribbon:after{
+    content:"";
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    border-right: 75px solid #cdcd00;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+
+}
+.text{
+    text-align: center;
+    
+}
+.btn-color{
+    background: #cdcd00;
+}
+.teaml{
+    background:url(https://us.123rf.com/450wm/trebor1/trebor11909/trebor1190900117/130753233-dark-green-wall-texture-for-background-or-wallpaper.jpg?ver=6https://us.123rf.com/450wm/trebor1/trebor11909/trebor1190900117/130753233-dark-green-wall-texture-for-background-or-wallpaper.jpg?ver=6);
+  background-position:center;
+  background-size:cover;
+}
+.teamk{
+    background:url(https://previews.123rf.com/images/smallsmiles/smallsmiles1708/smallsmiles170800115/84886245-abstract-dark-concrete-wall-texture-background-for-interiors-wallpaper-deluxe-design-pattern-can-use.jpg);
+  background-position:center;
+  background-size:cover;
+}
+.teamn{
+  background:url(https://c4.wallpaperflare.com/wallpaper/123/943/719/background-board-brown-carpentry-wallpaper-preview.jpg);
+  background-position:center;
+  background-size:cover;
+}
+
+/*================= end of second part ============*/
+
+
+.contact .info {
+  padding: 20px 40px;
+  background:#C6D113   ;
+  color: #131313;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+.contact .info i {
+  font-size: 30px;
+  color: #a31818;
+  margin-bottom: 15px;
+}
+
+.contact .info h4 {
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact .info p {
+  font-size: 15px;
+}
+.rounded-cor{
+  border-radius: 50px;
+}
+
+/*=============== end of contact =======================*/
+/*===================Footer==================*/
+
+/* ==============Team Card Begins=============== */
+.social{
+display: flex;
+width: 250px;
+justify-content: space-between;
+list-style: none;
+}
+.social .list-item{
+  position: relative;
+  width:60px;
+  height: 60px;
+  border-radius: 50%;
+  /* background: #fff; */
+}
+.social .list-item:after,
+.social .list-item:before{
+  content:"";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red, yellow);
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.social .list-item:after{
+  filter: blur(20px);
+  /* background: #fff; */
+}
+.social .list-item:hover:before,
+.social .list-item:hover:after{
+opacity: 1;
+}
+.social .list-item .list-link{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background: #000;
+  font-size: 28px;
+  border-radius: 50%;
+  transition:1s; 
+}
+.social .list-item .list-link i{
+  text-shadow: 0 2px 5px rgba(0,0,0, .2);
+
+}
+.social .list-item:nth-child(1) a,
+.social .list-item:nth-child(1):before,
+.social .list-item:nth-child(1):after{
+  background: linear-gradient(45deg, #00aeff, #a200ff);
+}
+.social .list-item:nth-child(2) a,
+.social .list-item:nth-child(2):before,
+.social .list-item:nth-child(2):after{
+  background: linear-gradient(45deg, #00a2ff, #ff1e00);
+}
+.social .list-item:nth-child(3) a,
+.social .list-item:nth-child(3):before,
+.social .list-item:nth-child(3):after{
+  background: linear-gradient(45deg,#ff008c, #ce6708);
+}
+.social .list-item:nth-child(4) a,
+.social .list-item:nth-child(4):before,
+.social .list-item:nth-child(4):after{
+  background: linear-gradient(45deg,#0791c7, #f794a5);
+}
+/* Team Card End */
+footer{
+  background-color: rgba(221, 249, 105, 0.5)
+}
+
+.meetour{
+  font-family: 'Courgette', cursive;
+  font-size: 30;
+  color: #d61c22;
+}
+
+.meet{
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  word-spacing: 5px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+    color: #222222;
+}
